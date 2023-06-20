@@ -1,0 +1,12 @@
+services:
+  ioc:
+    image: ghcr.io/lnls-dig/sofb-mon
+    build:
+      context: ./
+      dockerfile: docker/Dockerfile
+      labels:
+        org.opencontainers.image.source: https://github.com/lnls-dig/sofb-mon
+      args:
+        REPONAME: sofb-mon
+        RUNDIR: /opt/sofb-mon/iocBoot/iocSOFBMon
+        ENTRYPOINT: ./st.cmd
