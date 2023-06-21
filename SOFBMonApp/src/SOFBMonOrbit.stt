@@ -1,5 +1,6 @@
 program SOFBMonOrbit
 option +s;
+option -c;
 
 double timeout, window;
 int timeout_cnt;
@@ -397,12 +398,24 @@ ss scan {
 
         when (efTestAndClear(orbit_from_bpms_event)) {
             struct epicsTimeStamp ts[320];
-            int max_idx = 0, min_idx = 0, i;
+            int max_idx, min_idx, i;
+            int first_write = 0;
             for (i = 0; i < 320; i++) {
+                /* consumers of the orbit array want to know when some BPM has
+                 * been disconnected. This also means we aren't using the PV's
+                 * timestamp to calculate the spread, which avoids timing out */
+                if (!pvConnected(orbit_from_bpms[i])) {
+                    orbit[i] = NAN;
+                    continue;
+                }
+
                 ts[i] = pvTimeStamp(orbit_from_bpms[i]);
-                if (i > 0) {
+                if (first_write) {
                     if (epicsTimeLessThan(ts+i, ts+min_idx)) min_idx = i;
                     else if (epicsTimeGreaterThan(ts+i, ts+max_idx)) max_idx = i;
+                } else {
+                    first_write = 1;
+                    max_idx = min_idx = i;
                 }
 
                 /* get orbit ready for pvPut here, since PV monitors can be posted between transitions */
@@ -411,7 +424,11 @@ ss scan {
                     orbit[i] = orbit_from_bpms[i] / 1000; /* convert to um */
                 }
             }
-            spread = epicsTimeDiffInSeconds(ts+max_idx, ts+min_idx);
+            /* if all PVs were disconnected, simply post orbit */
+            if (first_write)
+                spread = epicsTimeDiffInSeconds(ts+max_idx, ts+min_idx);
+            else
+                spread = 0;
         } state read_all
     }
 
