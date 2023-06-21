@@ -10,9 +10,9 @@ dbLoadDatabase "../../dbd/SOFBMon.dbd"
 SOFBMon_registerRecordDeviceDriver(pdbbase) 
 
 ## Load record instances
-#dbLoadRecords("../../db/SOFBMon.db","user=root")
+dbLoadRecords("../../db/SOFBMonOrbit.db", "P=SI-Glob:, R=AP-SOFB:")
 
 iocInit()
 
 ## Start any sequence programs
-#seq sncSOFBMon,"user=root"
+seq SOFBMonOrbit, "P=SI-Glob:, R=AP-SOFB:"
