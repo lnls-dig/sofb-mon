@@ -1,0 +1,23 @@
+record(aai, "${P}${R}SlowOrbRaw-Mon"){
+    field(DESC, "Synchronized orbit from BPMs")
+    field(EGU, "um")
+    field(FTVL, FLOAT)
+    field(NELM, 320)
+}
+
+record(ao, "${P}${R}SlowOrbTimeout-SP"){
+    field(DESC, "Timeout for reading OrbitRaw-Mon")
+    field(EGU, "s")
+    field(VAL, .11)
+    field(PINI, YES)
+}
+record(ao, "${P}${R}SlowOrbWindow-SP"){
+    field(DESC, "Acceptable window for OrbitRaw-Mon")
+    field(EGU, "s")
+    field(VAL, 0.04)
+    field(PINI, YES)
+}
+
+record(longin, "${P}${R}SlowOrbTimeoutCnt-Mon"){
+    field(DESC, "Timeouts in OrbitRaw-Mon")
+}

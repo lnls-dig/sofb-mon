@@ -19,7 +19,10 @@ SOFBMon_DBD += base.dbd
 #SOFBMon_DBD += xxx.dbd
 
 # Add all the support libraries needed by this IOC
-#SOFBMon_LIBS += xxx
+SOFBMon_LIBS += seq pv
+
+SOFBMon_SRCS += SOFBMonOrbit.stt
+SOFBMon_DBD += SOFBMonOrbit.dbd
 
 # SOFBMon_registerRecordDeviceDriver.cpp derives from SOFBMon.dbd
 SOFBMon_SRCS += SOFBMon_registerRecordDeviceDriver.cpp
