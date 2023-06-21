@@ -9,4 +9,4 @@ services:
       args:
         REPONAME: sofb-mon
         RUNDIR: /opt/sofb-mon/iocBoot/iocSOFBMon
-        ENTRYPOINT: ./st.cmd
+        ENTRYPOINT: ./run.sh
