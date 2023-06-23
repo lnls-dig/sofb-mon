@@ -11,11 +11,22 @@ record(ao, "${P}${R}SlowOrbTimeout-SP"){
     field(VAL, .11)
     field(PINI, YES)
 }
+record(ai, "${P}${R}SlowOrbTimeout-RB"){
+    field(DESC, "Timeout for reading SlowOrbRaw-Mon")
+    field(EGU, "s")
+    field(INP, "${P}${R}SlowOrbTimeout-SP CP")
+}
+
 record(ao, "${P}${R}SlowOrbWindow-SP"){
     field(DESC, "Acceptable window for SlowOrbRaw-Mon")
     field(EGU, "s")
     field(VAL, 0.04)
     field(PINI, YES)
+}
+record(ai, "${P}${R}SlowOrbWindow-RB"){
+    field(DESC, "Acceptable window for SlowOrbRaw-Mon")
+    field(EGU, "s")
+    field(INP, "${P}${R}SlowOrbWindow-SP CP")
 }
 
 record(longin, "${P}${R}SlowOrbTimeoutCnt-Mon"){
