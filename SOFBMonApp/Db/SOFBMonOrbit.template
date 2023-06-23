@@ -6,18 +6,18 @@ record(aai, "${P}${R}SlowOrbRaw-Mon"){
 }
 
 record(ao, "${P}${R}SlowOrbTimeout-SP"){
-    field(DESC, "Timeout for reading OrbitRaw-Mon")
+    field(DESC, "Timeout for reading SlowOrbRaw-Mon")
     field(EGU, "s")
     field(VAL, .11)
     field(PINI, YES)
 }
 record(ao, "${P}${R}SlowOrbWindow-SP"){
-    field(DESC, "Acceptable window for OrbitRaw-Mon")
+    field(DESC, "Acceptable window for SlowOrbRaw-Mon")
     field(EGU, "s")
     field(VAL, 0.04)
     field(PINI, YES)
 }
 
 record(longin, "${P}${R}SlowOrbTimeoutCnt-Mon"){
-    field(DESC, "Timeouts in OrbitRaw-Mon")
+    field(DESC, "Timeouts in SlowOrbRaw-Mon")
 }
