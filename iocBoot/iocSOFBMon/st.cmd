@@ -11,6 +11,7 @@ SOFBMon_registerRecordDeviceDriver(pdbbase)
 
 ## Load record instances
 dbLoadRecords("../../db/SOFBMonOrbit.db", "P=SI-Glob:, R=AP-SOFB:")
+dbLoadRecords("../../db/SOFBMonOrbitConfig.db", "P=SI-Glob:, R=AP-SOFB:")
 
 iocInit()
 
