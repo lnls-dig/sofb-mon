@@ -1,10 +1,10 @@
-record(aai, "${P}${R}SlowOrbRaw-Mon"){
+record(aai, "${P}${R}${TARGET}Raw-Mon"){
     field(DESC, "Synchronized orbit from BPMs")
     field(EGU, "um")
     field(FTVL, FLOAT)
     field(NELM, 320)
 }
 
-record(longin, "${P}${R}SlowOrbTimeoutCnt-Mon"){
-    field(DESC, "Timeouts in SlowOrbRaw-Mon")
+record(longin, "${P}${R}${TARGET}TimeoutCnt-Mon"){
+    field(DESC, "Timeouts in ${TARGET}Raw-Mon")
 }
