@@ -1,0 +1,7 @@
+record(subArray, "${P}${R}${TARGET}"){
+    field(FTVL, FLOAT)
+    field(INP, "${P}${R}${SOURCE}.VAL CP")
+    field(MALM, 160)
+    field(NELM, 160)
+    field(INDX, 0)
+}
