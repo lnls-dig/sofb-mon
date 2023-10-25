@@ -12,6 +12,7 @@ SOFBMon_registerRecordDeviceDriver(pdbbase)
 ## Load record instances
 dbLoadRecords("../../db/SOFBMonOrbit.db", "P=SI-Glob:, R=AP-SOFB:, TARGET=SlowOrb")
 dbLoadRecords("../../db/SOFBMonOrbit.db", "P=SI-Glob:, R=AP-SOFB:, TARGET=SlowSumQ")
+dbLoadRecords("../../db/SOFBMonSum.db", "P=SI-Glob:, R=AP-SOFB:, TARGET=SlowSumRaw-Mon, SOURCE=SlowSumQRaw-Mon")
 dbLoadRecords("../../db/SOFBMonOrbitConfig.db", "P=SI-Glob:, R=AP-SOFB:")
 
 iocInit()
