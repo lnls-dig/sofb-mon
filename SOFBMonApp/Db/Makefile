@@ -9,6 +9,7 @@ include $(TOP)/configure/CONFIG
 DB += SOFBMonOrbit.db
 DB += SOFBMonOrbitConfig.db
 DB += SOFBMonSum.db
+DB += SOFBMonIntlk.db
 
 #----------------------------------------------------
 # If <anyname>.db template is not named <anyname>*.template add

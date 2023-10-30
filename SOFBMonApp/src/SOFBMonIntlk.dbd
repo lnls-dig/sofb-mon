@@ -1,0 +1,2 @@
+registrar(SOFBMonIntlkFlagsRegistrar)
+registrar(SOFBMonIntlkValuesRegistrar)
