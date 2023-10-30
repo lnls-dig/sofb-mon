@@ -1,0 +1,6 @@
+record(aai, "${P}${R}${TARGET}"){
+    field(DESC, "Data vector for all BPMs")
+    field(EGU, "${EGU=}")
+    field(FTVL, "${FTVL=CHAR}")
+    field(NELM, 160)
+}
