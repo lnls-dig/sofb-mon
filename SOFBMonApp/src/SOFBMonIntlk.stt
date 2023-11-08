@@ -202,7 +202,7 @@ ss scan {
             int or_flags = 0;
             for (i = 0; i < 160; i++) {
                 flags[i] = flags_from_bpms[i];
-                or_flags |= flags[i];
+                or_flags |= !!flags[i];
             }
             is_all_zero = !or_flags;
             pvPut(flags, SYNC);
