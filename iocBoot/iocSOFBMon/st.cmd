@@ -54,7 +54,8 @@ dbLoadRecords("../../db/SOFBMonIntlk.db", "P=SI-Glob:, R=AP-OrbIntlk:, FTVL=LONG
 dbLoadRecords("../../db/SOFBMonIntlk.db", "P=SI-Glob:, R=AP-OrbIntlk:, FTVL=LONG, EGU=nm, TARGET=IntlkLmtAngMinX-RB")
 dbLoadRecords("../../db/SOFBMonIntlk.db", "P=SI-Glob:, R=AP-OrbIntlk:, FTVL=LONG, EGU=nm, TARGET=IntlkLmtAngMaxY-RB")
 dbLoadRecords("../../db/SOFBMonIntlk.db", "P=SI-Glob:, R=AP-OrbIntlk:, FTVL=LONG, EGU=nm, TARGET=IntlkLmtAngMinY-RB")
-dbLoadRecords("../../db/SOFBMonIntlk.db", "P=SI-Glob:, R=AP-OrbIntlk:, FTVL=LONG, EGU=au, TARGET=IntlkLmtMinSum-RB")
+
+dbLoadRecords("../../db/SOFBMonIntlk.db", "P=SI-Glob:, R=AP-OrbIntlk:, FTVL=DOUBLE, EGU=au, TARGET=IntlkLmtMinSum-RB")
 
 iocInit()
 
@@ -101,4 +102,5 @@ seq SOFBMonIntlkValues, "P=SI-Glob:, R=AP-OrbIntlk:, TARGET=IntlkLmtAngMaxX-RB"
 seq SOFBMonIntlkValues, "P=SI-Glob:, R=AP-OrbIntlk:, TARGET=IntlkLmtAngMinX-RB"
 seq SOFBMonIntlkValues, "P=SI-Glob:, R=AP-OrbIntlk:, TARGET=IntlkLmtAngMaxY-RB"
 seq SOFBMonIntlkValues, "P=SI-Glob:, R=AP-OrbIntlk:, TARGET=IntlkLmtAngMinY-RB"
-seq SOFBMonIntlkValues, "P=SI-Glob:, R=AP-OrbIntlk:, TARGET=IntlkLmtMinSum-RB"
+
+seq SOFBMonIntlkDoubleValues, "P=SI-Glob:, R=AP-OrbIntlk:, TARGET=IntlkLmtMinSum-RB"
