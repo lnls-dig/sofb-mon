@@ -24,7 +24,7 @@ SOFBMon_LIBS += seq pv
 SOFBMon_SRCS += SOFBMonOrbit.stt
 SOFBMon_DBD += SOFBMonOrbit.dbd
 
-SOFBMon_SRCS += SOFBMonIntlkFlags.st SOFBMonIntlkValues.st
+SOFBMon_SRCS += SOFBMonIntlkFlags.st SOFBMonIntlkValues.st SOFBMonIntlkDoubleValues.st
 SOFBMon_DBD += SOFBMonIntlk.dbd
 
 # SOFBMon_registerRecordDeviceDriver.cpp derives from SOFBMon.dbd

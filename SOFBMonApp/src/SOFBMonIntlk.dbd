@@ -1,2 +1,3 @@
 registrar(SOFBMonIntlkFlagsRegistrar)
 registrar(SOFBMonIntlkValuesRegistrar)
+registrar(SOFBMonIntlkDoubleValuesRegistrar)
