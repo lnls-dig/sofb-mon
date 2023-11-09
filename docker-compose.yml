@@ -4,9 +4,9 @@ services:
     build:
       context: ./
       dockerfile: docker/Dockerfile
+      target: static-link
       labels:
         org.opencontainers.image.source: https://github.com/lnls-dig/sofb-mon
       args:
         REPONAME: sofb-mon
         RUNDIR: /opt/sofb-mon/iocBoot/iocSOFBMon
-        ENTRYPOINT: ./run.sh
