@@ -10,10 +10,8 @@ dbLoadDatabase "../../dbd/SOFBMon.dbd"
 SOFBMon_registerRecordDeviceDriver(pdbbase) 
 
 ## Load record instances
-dbLoadRecords("../../db/SOFBMonOrbit.db", "P=SI-Glob:, R=AP-SOFB:, TARGET=SlowOrb")
 dbLoadRecords("../../db/SOFBMonOrbit.db", "P=SI-Glob:, R=AP-SOFB:, TARGET=SlowSumQ")
 dbLoadRecords("../../db/SOFBMonSum.db", "P=SI-Glob:, R=AP-SOFB:, TARGET=SlowSumRaw-Mon, SOURCE=SlowSumQRaw-Mon")
-dbLoadRecords("../../db/SOFBMonOrbitConfig.db", "P=SI-Glob:, R=AP-SOFB:")
 
 dbLoadRecords("../../db/SOFBMonIntlk.db", "P=SI-Glob:, R=AP-OrbIntlk:, TARGET=Intlk-Mon")
 dbLoadRecords("../../db/SOFBMonIntlk.db", "P=SI-Glob:, R=AP-OrbIntlk:, TARGET=IntlkLtc-Mon")
@@ -60,7 +58,6 @@ dbLoadRecords("../../db/SOFBMonIntlk.db", "P=SI-Glob:, R=AP-OrbIntlk:, FTVL=DOUB
 iocInit()
 
 ## Start any sequence programs
-seq SOFBMonOrbit, "P=SI-Glob:, R=AP-SOFB:, TARGET=SlowOrb, FIRST=PosX-Mon, SECOND=PosY-Mon"
 seq SOFBMonOrbit, "P=SI-Glob:, R=AP-SOFB:, TARGET=SlowSumQ, FIRST=Sum-Mon, SECOND=PosQ-Mon"
 
 seq SOFBMonIntlkFlags, "P=SI-Glob:, R=AP-OrbIntlk:, TARGET=Intlk-Mon"
