@@ -1,3 +1,9 @@
+record(ao, "${P}${R}${TARGET}Divisor-Cte"){
+    field(DESC, "Divisor for orbit values")
+    field(VAL, "${DIVISOR=1}")
+    field(PINI, YES)
+}
+
 record(aai, "${P}${R}${TARGET}Raw-Mon"){
     field(DESC, "Synchronized orbit from BPMs")
     field(EGU, "um")

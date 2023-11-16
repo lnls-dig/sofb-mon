@@ -14,6 +14,9 @@ assign timeout_cnt to "{P}{R}{TARGET}TimeoutCnt-Mon";
 float orbit[320];
 float orbit_from_bpms[320];
 
+float orbit_divisor;
+assign orbit_divisor to "{P}{R}{TARGET}Divisor-Cte";
+
 assign orbit to "{P}{R}{TARGET}Raw-Mon";
 assign orbit_from_bpms to {
     "SI-01M2:DI-BPM:{FIRST}",
@@ -348,6 +351,7 @@ sync orbit_from_bpms to orbit_from_bpms_event;
 %%#include <epicsTime.h>
 
 entry {
+    pvGet(orbit_divisor);
     pvPut(timeout_cnt, ASYNC);
 }
 
@@ -421,7 +425,7 @@ ss scan {
                 /* get orbit ready for pvPut here, since PV monitors can be posted between transitions */
                 if (epicsTimeNotEqual(ts+i, sentinels+i)) {
                     sentinels[i] = ts[i];
-                    orbit[i] = orbit_from_bpms[i] / 1000; /* convert to um */
+                    orbit[i] = orbit_from_bpms[i] / orbit_divisor; /* convert to um */
                 }
             }
             /* if all PVs were disconnected, simply post orbit */
