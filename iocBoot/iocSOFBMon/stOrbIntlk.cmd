@@ -15,28 +15,20 @@ dbLoadRecords("../../db/SOFBMonSum.db", "P=SI-Glob:, R=AP-SOFB:, TARGET=SlowSumR
 
 dbLoadRecords("../../db/SOFBMonIntlk.db", "P=SI-Glob:, R=AP-OrbIntlk:, TARGET=Intlk-Mon")
 dbLoadRecords("../../db/SOFBMonIntlk.db", "P=SI-Glob:, R=AP-OrbIntlk:, TARGET=IntlkLtc-Mon")
-dbLoadRecords("../../db/SOFBMonIntlk.db", "P=SI-Glob:, R=AP-OrbIntlk:, TARGET=IntlkPosLower-Mon")
 dbLoadRecords("../../db/SOFBMonIntlk.db", "P=SI-Glob:, R=AP-OrbIntlk:, TARGET=IntlkPosLowerX-Mon")
 dbLoadRecords("../../db/SOFBMonIntlk.db", "P=SI-Glob:, R=AP-OrbIntlk:, TARGET=IntlkPosLowerY-Mon")
-dbLoadRecords("../../db/SOFBMonIntlk.db", "P=SI-Glob:, R=AP-OrbIntlk:, TARGET=IntlkPosUpper-Mon")
 dbLoadRecords("../../db/SOFBMonIntlk.db", "P=SI-Glob:, R=AP-OrbIntlk:, TARGET=IntlkPosUpperX-Mon")
 dbLoadRecords("../../db/SOFBMonIntlk.db", "P=SI-Glob:, R=AP-OrbIntlk:, TARGET=IntlkPosUpperY-Mon")
-dbLoadRecords("../../db/SOFBMonIntlk.db", "P=SI-Glob:, R=AP-OrbIntlk:, TARGET=IntlkPosLowerLtc-Mon")
 dbLoadRecords("../../db/SOFBMonIntlk.db", "P=SI-Glob:, R=AP-OrbIntlk:, TARGET=IntlkPosLowerLtcX-Mon")
 dbLoadRecords("../../db/SOFBMonIntlk.db", "P=SI-Glob:, R=AP-OrbIntlk:, TARGET=IntlkPosLowerLtcY-Mon")
-dbLoadRecords("../../db/SOFBMonIntlk.db", "P=SI-Glob:, R=AP-OrbIntlk:, TARGET=IntlkPosUpperLtc-Mon")
 dbLoadRecords("../../db/SOFBMonIntlk.db", "P=SI-Glob:, R=AP-OrbIntlk:, TARGET=IntlkPosUpperLtcX-Mon")
 dbLoadRecords("../../db/SOFBMonIntlk.db", "P=SI-Glob:, R=AP-OrbIntlk:, TARGET=IntlkPosUpperLtcY-Mon")
-dbLoadRecords("../../db/SOFBMonIntlk.db", "P=SI-Glob:, R=AP-OrbIntlk:, TARGET=IntlkAngLower-Mon")
 dbLoadRecords("../../db/SOFBMonIntlk.db", "P=SI-Glob:, R=AP-OrbIntlk:, TARGET=IntlkAngLowerX-Mon")
 dbLoadRecords("../../db/SOFBMonIntlk.db", "P=SI-Glob:, R=AP-OrbIntlk:, TARGET=IntlkAngLowerY-Mon")
-dbLoadRecords("../../db/SOFBMonIntlk.db", "P=SI-Glob:, R=AP-OrbIntlk:, TARGET=IntlkAngUpper-Mon")
 dbLoadRecords("../../db/SOFBMonIntlk.db", "P=SI-Glob:, R=AP-OrbIntlk:, TARGET=IntlkAngUpperX-Mon")
 dbLoadRecords("../../db/SOFBMonIntlk.db", "P=SI-Glob:, R=AP-OrbIntlk:, TARGET=IntlkAngUpperY-Mon")
-dbLoadRecords("../../db/SOFBMonIntlk.db", "P=SI-Glob:, R=AP-OrbIntlk:, TARGET=IntlkAngLowerLtc-Mon")
 dbLoadRecords("../../db/SOFBMonIntlk.db", "P=SI-Glob:, R=AP-OrbIntlk:, TARGET=IntlkAngLowerLtcX-Mon")
 dbLoadRecords("../../db/SOFBMonIntlk.db", "P=SI-Glob:, R=AP-OrbIntlk:, TARGET=IntlkAngLowerLtcY-Mon")
-dbLoadRecords("../../db/SOFBMonIntlk.db", "P=SI-Glob:, R=AP-OrbIntlk:, TARGET=IntlkAngUpperLtc-Mon")
 dbLoadRecords("../../db/SOFBMonIntlk.db", "P=SI-Glob:, R=AP-OrbIntlk:, TARGET=IntlkAngUpperLtcX-Mon")
 dbLoadRecords("../../db/SOFBMonIntlk.db", "P=SI-Glob:, R=AP-OrbIntlk:, TARGET=IntlkAngUpperLtcY-Mon")
 
@@ -62,28 +54,20 @@ seq SOFBMonOrbit, "P=SI-Glob:, R=AP-SOFB:, TARGET=SlowSumQ, FIRST=Sum-Mon, SECON
 
 seq SOFBMonIntlkFlags, "P=SI-Glob:, R=AP-OrbIntlk:, TARGET=Intlk-Mon"
 seq SOFBMonIntlkFlags, "P=SI-Glob:, R=AP-OrbIntlk:, TARGET=IntlkLtc-Mon"
-seq SOFBMonIntlkFlags, "P=SI-Glob:, R=AP-OrbIntlk:, TARGET=IntlkPosLower-Mon"
 seq SOFBMonIntlkFlags, "P=SI-Glob:, R=AP-OrbIntlk:, TARGET=IntlkPosLowerX-Mon"
 seq SOFBMonIntlkFlags, "P=SI-Glob:, R=AP-OrbIntlk:, TARGET=IntlkPosLowerY-Mon"
-seq SOFBMonIntlkFlags, "P=SI-Glob:, R=AP-OrbIntlk:, TARGET=IntlkPosUpper-Mon"
 seq SOFBMonIntlkFlags, "P=SI-Glob:, R=AP-OrbIntlk:, TARGET=IntlkPosUpperX-Mon"
 seq SOFBMonIntlkFlags, "P=SI-Glob:, R=AP-OrbIntlk:, TARGET=IntlkPosUpperY-Mon"
-seq SOFBMonIntlkFlags, "P=SI-Glob:, R=AP-OrbIntlk:, TARGET=IntlkPosLowerLtc-Mon"
 seq SOFBMonIntlkFlags, "P=SI-Glob:, R=AP-OrbIntlk:, TARGET=IntlkPosLowerLtcX-Mon"
 seq SOFBMonIntlkFlags, "P=SI-Glob:, R=AP-OrbIntlk:, TARGET=IntlkPosLowerLtcY-Mon"
-seq SOFBMonIntlkFlags, "P=SI-Glob:, R=AP-OrbIntlk:, TARGET=IntlkPosUpperLtc-Mon"
 seq SOFBMonIntlkFlags, "P=SI-Glob:, R=AP-OrbIntlk:, TARGET=IntlkPosUpperLtcX-Mon"
 seq SOFBMonIntlkFlags, "P=SI-Glob:, R=AP-OrbIntlk:, TARGET=IntlkPosUpperLtcY-Mon"
-seq SOFBMonIntlkFlags, "P=SI-Glob:, R=AP-OrbIntlk:, TARGET=IntlkAngLower-Mon"
 seq SOFBMonIntlkFlags, "P=SI-Glob:, R=AP-OrbIntlk:, TARGET=IntlkAngLowerX-Mon"
 seq SOFBMonIntlkFlags, "P=SI-Glob:, R=AP-OrbIntlk:, TARGET=IntlkAngLowerY-Mon"
-seq SOFBMonIntlkFlags, "P=SI-Glob:, R=AP-OrbIntlk:, TARGET=IntlkAngUpper-Mon"
 seq SOFBMonIntlkFlags, "P=SI-Glob:, R=AP-OrbIntlk:, TARGET=IntlkAngUpperX-Mon"
 seq SOFBMonIntlkFlags, "P=SI-Glob:, R=AP-OrbIntlk:, TARGET=IntlkAngUpperY-Mon"
-seq SOFBMonIntlkFlags, "P=SI-Glob:, R=AP-OrbIntlk:, TARGET=IntlkAngLowerLtc-Mon"
 seq SOFBMonIntlkFlags, "P=SI-Glob:, R=AP-OrbIntlk:, TARGET=IntlkAngLowerLtcX-Mon"
 seq SOFBMonIntlkFlags, "P=SI-Glob:, R=AP-OrbIntlk:, TARGET=IntlkAngLowerLtcY-Mon"
-seq SOFBMonIntlkFlags, "P=SI-Glob:, R=AP-OrbIntlk:, TARGET=IntlkAngUpperLtc-Mon"
 seq SOFBMonIntlkFlags, "P=SI-Glob:, R=AP-OrbIntlk:, TARGET=IntlkAngUpperLtcX-Mon"
 seq SOFBMonIntlkFlags, "P=SI-Glob:, R=AP-OrbIntlk:, TARGET=IntlkAngUpperLtcY-Mon"
 
